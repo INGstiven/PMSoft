@@ -1,0 +1,7 @@
+﻿@using PMSoft.DAL
+@using PMSoftWeb.Helpers;
+@{ 
+   var items = typeof(enumEstado).GetItems((int?)Model);
+}
+
+@Html.DropDownList("", items)
